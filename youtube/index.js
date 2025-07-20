@@ -1,28 +1,32 @@
+
 let api_key = "AIzaSyCqLqYFFoqDUvXTHh8iPDW8ya64eFowGgk";
-// console.log(api_key);
 let api = "https://youtube.googleapis.com/youtube/v3/search?part=snippet";
-// console.log(api);
 let search = document.getElementById("search");
-// let main = document.getElementById("main");
+let main = document.getElementById("main");
 
-
-
-const getData = async()=>{
+const getData = async () => {
   let res = await fetch(`${api}&q=${search.value}&key=${api_key}`);
-  // console.log(res);
   let data = await res.json();
-  console.log(data);
-  let main = document.getElementById("main");
-  let title = document.createElement("h2");
-  let 
-  // console.log(title);
-  
-  // console.log(main);
-  
-  
-}
+  Display(data.items); 
+};
 
-const delay = ()=>{
- setTimeout(getData,2000)
+const Display = (data) => {
+  main.innerHTML = ""; 
+
+  data.map(({ id: { videoId }, snippet }) => {
+    let iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube.com/embed/${videoId}`;
   
-}
+
+    let name = document.createElement("h2");
+    name.innerText = snippet.title;
+
+    let div = document.createElement("div");
+    div.append(iframe, name);
+    main.append(div);
+  });
+};
+
+const delay = () => {
+  setTimeout(getData, 2000);
+};
