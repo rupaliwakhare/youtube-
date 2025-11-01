@@ -175,6 +175,7 @@ button{
 /* Store section */
 .other-section{
     padding-block: 5rem;
+    /* background: gold; */
 }
 .row-container{
     display: flex;
@@ -199,6 +200,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-top: 1rem;
 }
@@ -215,3 +217,4 @@ h2{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
    rgba(0, 0, 0, .3)0px 8px 16px -8px;
 }
+/* Feature Food */
