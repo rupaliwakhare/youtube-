@@ -218,3 +218,6 @@ h2{
    rgba(0, 0, 0, .3)0px 8px 16px -8px;
 }
 /* Feature Food */
+h4{
+  font-weight: 600;
+}
