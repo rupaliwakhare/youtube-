@@ -240,3 +240,11 @@ h4{
 .details{
   margin-top: 10px;
 }
+/* App section */
+
+.app-img{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  height: 4.5rem;
+}
