@@ -257,3 +257,17 @@ h4{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
 }
+/* Best food */
+.rating img{
+  width: 6rem;
+}
+.rating h4{
+  color: var(--orange-clr);
+  font-size: 1.3rem;
+}
+.rating{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
