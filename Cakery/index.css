@@ -160,7 +160,8 @@ p{
     display: flex;
     gap: 1.5rem;
 }
-button{
+button,
+.form-btn{
     background: var(--orange-clr);
     color: var(--white-clr);
     border: .1rem solid var(--orange-clr);
@@ -270,4 +271,21 @@ h4{
   align-items: center;
   gap: 2rem;
   margin-top: 1rem;
+}
+/* Newslatter section */
+.form-container{
+  border: 0.2rem solid var(--light-gery-clr);
+  height: 3.5rem;
+  border-radius: 5rem;
+}
+input[type='email']{
+  height: 100%;
+  padding: .25rem;
+  border-radius: 5rem 0 0 5rem;
+  border: none;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+input:focus{
+  outline: none;
 }
